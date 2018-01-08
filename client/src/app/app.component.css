@@ -1,0 +1,46 @@
+.container {
+  width: 100%;
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+.sebm-google-map-container {
+  height: 535px;
+}
+
+.form-control {
+  width: 80% !important;
+  display: inline-block;
+}
+
+.informationSpan {
+  margin-left: 20px;
+  font-size: 2em;
+  font-family: "skolar",serif;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+.navbar-brand {
+  padding: 5px 30px;
+}
+
+.navbar-brand > img {
+  height: 40px;
+}
+
+.navbar-right > a {
+  font-size: 1.3em;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+#routeLink {
+  font-size:2.0em;
+  padding-top:4px;
+  display: inline-block;
+}

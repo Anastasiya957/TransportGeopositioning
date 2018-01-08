@@ -1,0 +1,20 @@
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">User Name</th>
+    <th scope="col">Start Point</th>
+    <th scope="col">End Point</th>
+    <th scope="col">Date</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let route of routes; let i = index">
+    <th scope="row">{{i + 1}}</th>
+    <td>{{route.userName}}</td>
+    <td>{{route.startPoint}}</td>
+    <td>{{route.endPoint}}</td>
+    <td>{{formatDate(route.date)}}</td>
+  </tr>
+  </tbody>
+</table>

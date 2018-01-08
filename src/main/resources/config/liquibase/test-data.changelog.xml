@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet author="laputski" id="insert-default-users">
+        <insert tableName="app_user">
+            <column name="name" value="admin"/>
+            <column name="password" value="admin"/>
+            <column name="enable" value="true"/>
+            <column name="role" value="ADMIN"/>
+        </insert>
+
+        <insert tableName="app_user">
+            <column name="name" value="user"/>
+            <column name="password" value="user"/>
+            <column name="enable" value="true"/>
+            <column name="role" value="DRIVER"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="insert_default_routes" author="nastya">
+        <insert tableName="route">
+            <column name="user_id" value="1"/>
+            <column name="start_point" value="проспект Победителей 113, Минск, Беларусь" />
+            <column name="end_point" value="улица Радиальная 24, Минск, Беларусь" />
+            <column name="date" value="now()" />
+        </insert>
+    </changeSet>
+
+    <changeSet id="insert_default_routes2" author="nastya">
+        <insert tableName="route">
+            <column name="user_id" value="2"/>
+            <column name="start_point" value="Борисовский проезд, Москва, Россия" />
+            <column name="end_point" value="проспект Победителей 125, Минск, Беларусь" />
+            <column name="date" value="now()" />
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>

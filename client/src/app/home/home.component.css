@@ -1,0 +1,52 @@
+.sebm-google-map-container {
+  height: 600px;
+}
+
+.form-control {
+  /*width: 80% !important;*/
+  width: 300px;
+  display: inline-block;
+}
+
+.informationSpan {
+  margin-left: 20px;
+  font-size: 2em;
+  font-family: "skolar",serif;
+}
+
+.row {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.row:first-child span {
+  background-color: #48e648;
+}
+
+.row:last-child span {
+  background-color: #ff3030;
+}
+
+.map {
+  position: relative;
+  /*min-height: 100vh;
+  margin-top: -52px;*/
+}
+
+.form-group {
+  position: absolute;
+  bottom: 5px;
+  left: 15px;
+  background-color: #FFF;
+  /*height: 180px;*/
+  width: 15%;
+  /*margin-right: auto;
+  margin-left: 20px;
+  margin-top: 0px;*/
+  /*border-radius: 10px;*/
+  padding: 20px;
+  margin: 0px;
+  text-align:center;
+  background-color: #e7e7e700;
+  /*border: 1px solid black;*/
+}

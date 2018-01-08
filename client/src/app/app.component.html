@@ -1,0 +1,21 @@
+<div class="container">
+
+  <nav class="navbar navbar-default">
+    <a class="navbar-brand" routerLink="/home"><img src="../assets/img/logo.png"/> </a>
+
+    <div id="routeLink">
+      <a routerLink="/route">Routes</a>
+    </div>
+
+    <div class="navbar-form navbar-right">
+      <a routerLink="/login" *ngIf="!authService.isAuthorized()">Sign In</a>
+      <a *ngIf="authService.isAuthorized()" (click)="signOut()">Sign Out</a>
+    </div>
+  </nav>
+
+</div>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+
